@@ -9,7 +9,7 @@ from typing import Generator
 
 
 # ------------------------------------------------------------
-# DuckDuckGo search fixtures
+#  search fixtures
 # ------------------------------------------------------------
 
 @pytest.fixture
@@ -19,3 +19,4 @@ def login_page(page: Page) -> SauceDemoLoginPage:
 @pytest.fixture
 def inventory_page(page: Page) -> SauceDemoInventoryPage:
     return SauceDemoInventoryPage(page)
+

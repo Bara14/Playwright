@@ -10,7 +10,7 @@ class SauceDemoInventoryPage:
         self.basket_icon = page.locator("#shopping_cart_container")
         self.hamburger_menu = page.locator("#react-burger-menu-btn")
         self.hamburger_menu_all_items = page.locator("#inventory_sidebar_link")
-
+        self.item = page.locator("xpath=//div[contains(@class,'inventory_item_name') and contains(text(),'Sauce Labs Bolt T-Shirt')]")
 
     def load(self) -> None:
         self.page.goto(self.URL)
