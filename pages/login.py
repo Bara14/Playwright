@@ -1,7 +1,3 @@
-"""
-This module contains DuckDuckGoSearchPage,
-the page object for the DuckDuckGo search page.
-"""
 
 from playwright.sync_api import Page
 
@@ -20,7 +16,7 @@ class SauceDemoLoginPage:
     def load(self) -> None:
         self.page.goto(self.URL)
 
-    def loginForm(self, login: str, password: str) -> None:
+    def fillLoginForm(self, login: str, password: str) -> None:
         self.username_input.fill(login)
         self.password_input.fill(password)
         self.search_button.click()
